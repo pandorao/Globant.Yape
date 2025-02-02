@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,12 @@ namespace Yape.Adapters.Services.Repositories
         {
             _dbContext = dbContext;
         }
-        
+
+        public async Task<List<Person>> GetAll()
+        {
+            return await _dbContext.People.ToListAsync();
+        }
+
         public async Task AddAsync(Person person)
         {
             _dbContext.Add(person);

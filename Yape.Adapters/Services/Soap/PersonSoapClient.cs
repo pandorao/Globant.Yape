@@ -1,7 +1,7 @@
 ﻿using Yape.Entities;
 using Yape.Ports;
 
-namespace Yape.Adapters.Services
+namespace Yape.Adapters.Services.Soap
 {
     public class PersonSoapClient : IPersonSoapClient
     {

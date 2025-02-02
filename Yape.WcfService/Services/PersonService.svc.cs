@@ -12,7 +12,7 @@ namespace Yape.WcfService
 {
     public class PersonService : IPersonService
     {
-        public List<Person> GetPersonByPhoneNumber(string cellPhoneNumber)
+        public Person GetPersonByPhoneNumber(string cellPhoneNumber)
         {
             return UnitOfWork
                 .PersonRepository

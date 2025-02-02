@@ -9,7 +9,7 @@ namespace Yape.WcfService.Repositories
 {
     public interface IPersonRepository
     {
-        List<Person> GetPersonByPhoneNumber(string phoneNumber);
+        Person GetPersonByPhoneNumber(string phoneNumber);
     }
 
     public class PersonRepository : IPersonRepository
@@ -21,12 +21,11 @@ namespace Yape.WcfService.Repositories
             context = _context;
         }
 
-        public List<Person> GetPersonByPhoneNumber(string phoneNumber)
+        public Person GetPersonByPhoneNumber(string phoneNumber)
         {
             return _context
                 .People
-                .Where(x => x.CellPhoneNumber == phoneNumber)
-                .ToList();
+                .FirstOrDefault(x => x.CellPhoneNumber == phoneNumber);
         }
     }
 }

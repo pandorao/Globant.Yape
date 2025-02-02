@@ -14,6 +14,6 @@ namespace Yape.WcfService
     {
 
         [OperationContract]
-        List<Person> GetPersonByPhoneNumber(string cellPhoneNumber);
+        Person GetPersonByPhoneNumber(string cellPhoneNumber);
     }
 }

@@ -16,7 +16,7 @@ namespace Yape.WcfService.Persistence
             {
                 new Person()
                 {
-                    CellPhoneNumber = "1234567890",
+                    CellPhoneNumber = "3002906178",
                     Name = "Juan",
                     LastName = "Pérez",
                     DocumentType = "DNI",
@@ -24,7 +24,7 @@ namespace Yape.WcfService.Persistence
                 },
                 new Person()
                 {
-                    CellPhoneNumber = "9876543210",
+                    CellPhoneNumber = "300458695",
                     Name = "María",
                     LastName = "González",
                     DocumentType = "DNI",
@@ -32,7 +32,7 @@ namespace Yape.WcfService.Persistence
                 },
                 new Person()
                 {
-                    CellPhoneNumber = "5551234567",
+                    CellPhoneNumber = "300458696",
                     Name = "Carlos",
                     LastName = "Sánchez",
                     DocumentType = "CC",
@@ -40,15 +40,15 @@ namespace Yape.WcfService.Persistence
                 },
                 new Person()
                 {
-                    CellPhoneNumber = "6007891234",
+                    CellPhoneNumber = "3004586912",
                     Name = "Ana",
                     LastName = "Ramírez",
                     DocumentType = "CC",
-                    DocumentNumber = "A1234567"
+                    DocumentNumber = "1234567"
                 },
                 new Person()
                 {
-                    CellPhoneNumber = "7774561230",
+                    CellPhoneNumber = "3004586923",
                     Name = "Luis",
                     LastName = "Martínez",
                     DocumentType = "DNI",

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yape.WcfService", "Yape.WcfService\Yape.WcfService.csproj", "{99EC17E0-A17F-460D-9396-F27DD8D7A4F3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{118CF651-08A0-4B34-AD6A-3C6FC39CA80B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{8EF82FE8-2E31-4D86-AAB5-7307FF79EA25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99EC17E0-A17F-460D-9396-F27DD8D7A4F3} = {8EF82FE8-2E31-4D86-AAB5-7307FF79EA25}
+		{8EF82FE8-2E31-4D86-AAB5-7307FF79EA25} = {118CF651-08A0-4B34-AD6A-3C6FC39CA80B}
 	EndGlobalSection
 EndGlobal

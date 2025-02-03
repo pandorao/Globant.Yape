@@ -51,6 +51,13 @@ namespace Yape.Services
                 return serviceResult;
             }
 
+            if (await _personRepository.PersonExists(person))
+            {
+                serviceResult.AddModelError("", "User already exists");
+                return serviceResult;
+            }
+
+            person.Id = Guid.NewGuid().ToString();
             await _personRepository.AddAsync(person);
             serviceResult.ResponseObject = person;
             return serviceResult;

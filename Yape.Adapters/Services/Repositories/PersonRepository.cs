@@ -21,7 +21,19 @@ namespace Yape.Adapters.Services.Repositories
 
         public async Task<List<Person>> GetAllAsync()
         {
-            return await _dbContext.People.ToListAsync();
+            return await _dbContext
+                .People
+                .ToListAsync();
+        }
+
+        public async Task<bool> PersonExists(Person person)
+        {
+            return await _dbContext
+                .People
+                .AnyAsync(x => 
+                    x.DocumentNumber == person.DocumentNumber &&
+                    x.DocumentType == person.DocumentType
+                );
         }
 
         public async Task AddAsync(Person person)

@@ -11,5 +11,6 @@ namespace Yape.Ports.Output
     {
         Task<List<Person>> GetAllAsync();
         Task AddAsync(Person person);
+        Task<bool> PersonExists(Person person);
     }
 }

@@ -18,7 +18,7 @@ namespace Yape.WcfService.Repositories
 
         public PersonRepository(PersistenceContext context)
         {
-            context = _context;
+            _context = context;
         }
 
         public Person GetPersonByPhoneNumber(string phoneNumber)

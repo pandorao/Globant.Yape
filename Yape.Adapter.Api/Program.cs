@@ -25,6 +25,13 @@ builder.Services.AddScoped<IPersonSoapClient, PersonSoapClient>();
 
 var app = builder.Build();
 
+// Only for testing propouse
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    dbContext.Database.Migrate();
+}
+
 app.UseSwagger();
 app.UseSwaggerUI();
 

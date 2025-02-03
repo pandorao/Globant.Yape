@@ -30,7 +30,7 @@ namespace Yape.Services
         {
             var serviceResult = new ServiceResult<Person>();
 
-            if (person.IsValid(out var erros))
+            if (!person.IsValid(out var erros))
             {
                 serviceResult.AddModelError(erros);
                 return serviceResult;

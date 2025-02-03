@@ -7,12 +7,12 @@ using Yape.WcfService.Repositories;
 
 namespace Yape.WcfService
 {
-    public static class UnitOfWork
+    public class UnitOfWork
     {
         #region Persistence
-        private static PersistenceContext _PersistenceContext;
+        private PersistenceContext _PersistenceContext;
 
-        public static PersistenceContext PersistenceContext 
+        public PersistenceContext PersistenceContext 
         { 
             get
             {
@@ -27,8 +27,8 @@ namespace Yape.WcfService
         #endregion
 
         #region Repositories
-        private static IPersonRepository _PersonRepository;
-        public static IPersonRepository PersonRepository 
+        private IPersonRepository _PersonRepository;
+        public IPersonRepository PersonRepository 
         { 
             get
             {

@@ -58,6 +58,6 @@ namespace Yape.WcfService.Persistence
         }
 
 
-        public List<Person> People { get; set; }
+        public List<Person> People { get; set; } = new List<Person>();
     }
 }

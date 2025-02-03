@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Yape.Adapters.Services.Repositories.Persistance;
 using Yape.Entities;
-using Yape.Ports;
+using Yape.Ports.Output;
 
 namespace Yape.Adapters.Services.Repositories
 {
@@ -19,7 +19,7 @@ namespace Yape.Adapters.Services.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<Person>> GetAll()
+        public async Task<List<Person>> GetAllAsync()
         {
             return await _dbContext.People.ToListAsync();
         }

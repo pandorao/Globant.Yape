@@ -1,6 +1,6 @@
 ﻿using Yape.Entities;
 
-namespace Yape.Ports
+namespace Yape.Ports.Output
 {
     public interface IPersonSoapClient
     {

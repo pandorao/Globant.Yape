@@ -1,5 +1,5 @@
 ﻿using Yape.Entities;
-using Yape.Ports;
+using Yape.Ports.Output;
 
 namespace Yape.Adapters.Services.Soap
 {

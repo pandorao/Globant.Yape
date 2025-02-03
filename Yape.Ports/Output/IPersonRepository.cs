@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Yape.Entities;
 
-namespace Yape.Ports
+namespace Yape.Ports.Output
 {
     public interface IPersonRepository
     {
+        Task<List<Person>> GetAllAsync();
         Task AddAsync(Person person);
     }
 }

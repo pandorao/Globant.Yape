@@ -1,8 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Yape.Entities.Base;
 
 namespace Yape.Entities
 {
-    public class Person
+    public class Person : BaseModel
     {
         public string Id { get; set; }
 
